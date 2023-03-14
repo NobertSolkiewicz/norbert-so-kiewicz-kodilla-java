@@ -13,18 +13,27 @@ public class ShapeCollector {
     }
 
     public void addFigure(Shape shape) {
-
+        figures.add(shape);
     }
 
     public boolean removeFigure(Shape shape) {
-        return true;
+        boolean result = false;
+        if (figures.contains(shape)) {
+            figures.remove(shape);
+            result = true;
+        }
+        return result;
     }
 
     public Shape getFigure(int n) {
-        return null;
+        Shape shape1 = null;
+        if (n >= 0 && n < figures.size()) {
+            shape1 = figures.get(n);
+        }
+        return shape1;
     }
 
     public void showFigures() {
-
+        System.out.println(shape.getShapeName());
     }
 }

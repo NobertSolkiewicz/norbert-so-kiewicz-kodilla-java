@@ -44,7 +44,7 @@ import static org.junit.jupiter.api.Assertions.*;
             ShapeCollector shapeCollector = new ShapeCollector(new Triangle());
 
             //When
-            shapeCollector.getFigure(1);
+            shapeCollector.getFigure(0);
             Shape retrievedShape;
             retrievedShape = shapeCollector.getFigure(0);
 
