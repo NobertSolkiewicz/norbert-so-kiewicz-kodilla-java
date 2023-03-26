@@ -4,9 +4,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
-    //całę odczytywanie z klawiatury zrobić scannerem i
-    // wszyzstko jedynm ciurkiem a potem to wszystko rozbijać
-
     Scanner scanner = new Scanner(System.in);
     public void run() {
         int roundscount = 0;
