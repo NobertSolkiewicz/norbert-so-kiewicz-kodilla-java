@@ -6,4 +6,6 @@ include 'kodilla-exception'
 include 'kodilla-Tic_Tac_Toe'
 include 'blackjack'
 include 'kodilla-good-patterns'
+include 'kodilla-spring-intro'
+include 'kodilla-spring'
 
