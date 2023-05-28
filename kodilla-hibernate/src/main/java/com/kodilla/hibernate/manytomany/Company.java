@@ -6,6 +6,10 @@ import jakarta.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+@NamedNativeQuery(
+        name = "Company.retrieveCompany",
+        query = "SELECT * FROM COMPANY WHERE LEFT (FIRSTNAME, 3) = :FIRSTNAME"
+)
 @Entity
 @Table(name = "COMPANIES")
 public class Company {
