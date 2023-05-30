@@ -4,9 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SudokuElement {
+    public static final int EMPTY = -1;
+    private int value;
 
-    private int element;
-    public static int EMPTY = -1;
+    public SudokuElement() {
+        this.value = EMPTY;
+    }
 
-    List<Integer> elements = new ArrayList<>();
+    public SudokuElement(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
 }
