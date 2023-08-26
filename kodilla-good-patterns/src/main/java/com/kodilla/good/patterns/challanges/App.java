@@ -1,7 +1,5 @@
 package com.kodilla.good.patterns.challanges;
 
-import java.time.LocalDateTime;
-
 public class App {
     public static void main(String[] args) {
         OrderRequestRetriever orderRequestRetriever = new OrderRequestRetriever();
