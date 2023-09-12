@@ -30,7 +30,7 @@ public enum DbManager {
         return INSTANCE;
     }
 
-    public Connection getConnetion() {
+    public Connection getConnection() {
         return conn;
     }
 

@@ -16,7 +16,7 @@ public class DbManagerTestSuite {
         //When
         DbManager dbManager = DbManager.getInstance();
         //Then
-        assertNotNull(dbManager.getConnetion());
+        assertNotNull(dbManager.getConnection());
 
     }
 
@@ -27,7 +27,7 @@ public class DbManagerTestSuite {
 
         //When
         String sqlQuery = "SELECT * FROM USERS";
-        Statement statement = dbManager.getConnetion().createStatement();
+        Statement statement = dbManager.getConnection().createStatement();
         ResultSet rs = statement.executeQuery(sqlQuery);
 
         //Then
@@ -55,7 +55,7 @@ public class DbManagerTestSuite {
                 GROUP BY P.USER_ID
                 HAVING COUNT(*) >= 2
                 """;
-        Statement statement = dbManager.getConnetion().createStatement();
+        Statement statement = dbManager.getConnection().createStatement();
         ResultSet rs = statement.executeQuery(sqlQuery);
 
         //Then
